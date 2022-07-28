@@ -12,13 +12,13 @@ namespace Homework1_1_4
         {
             int columns = 3;
             int image = 52; 
-            int rowsForView; 
+            int rowsFull; 
             int imageRemain;
 
-            rowsForView = image / columns;
+            rowsFull = image / columns;
             imageRemain = image % columns;
 
-            Console.WriteLine("Можно будет вывести "+ rowsForView + " полностью заполненных рядов, " + imageRemain + " картинок будет сверх меры.");
+            Console.WriteLine("Можно будет вывести "+ rowsFull + " полностью заполненных рядов, " + imageRemain + " картинок будет сверх меры.");
         }
     }
 }
