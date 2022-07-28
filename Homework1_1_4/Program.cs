@@ -10,16 +10,15 @@ namespace Homework1_1_4
     {
         static void Main(string[] args)
         {
-            int columns = 3; // Количество столбцов
-            int image = 52; // Количество картинок
-            int rows; // Количество рядов
-            int imageRemain; // Кол-во изображений сверх меры
+            int columns = 3;
+            int image = 52; 
+            int rowsForView; 
+            int imageRemain;
 
-            rows = image / columns;
+            rowsForView = image / columns;
             imageRemain = image % columns;
 
-            Console.WriteLine("Можно будет вывести "+ rows+ " полностью заполненных рядов, " + imageRemain + " картинок будет сверх меры.");
-
+            Console.WriteLine("Можно будет вывести "+ rowsForView + " полностью заполненных рядов, " + imageRemain + " картинок будет сверх меры.");
         }
     }
 }
